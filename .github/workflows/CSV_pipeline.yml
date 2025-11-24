@@ -36,4 +36,4 @@ jobs:
 
       - name: Run CSV script
         run: |
-          python your_csv_script.py
+          python Scripts/your_csv_script.py
