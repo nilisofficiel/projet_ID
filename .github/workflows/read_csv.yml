@@ -1,0 +1,33 @@
+name: Lecture CSV selon environnement
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Choisir l’environnement : dev, test ou prod'
+        required: true
+        default: 'dev'
+
+jobs:
+  read-csv-job:
+    runs-on: ubuntu-latest
+    env:
+      ENVIRONMENT: ${{ github.event.inputs.environment }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install pandas
+        run: pip install pandas
+
+      - name: Run Python script
+        run: python scripts/read_csv.py
