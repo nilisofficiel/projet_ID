@@ -1,0 +1,32 @@
+{
+  "huggingface_api_key": "YOUR_HUGGINGFACE_API_KEY_HERE",
+  "did_api_key": "YOUR_DID_API_KEY_HERE",
+  "deepmotion_api_key": "YOUR_DEEPMOTION_API_KEY_HERE",
+  "default_platform": "tiktok",
+  "episode_duration": 180,
+  "output_settings": {
+    "tiktok": {
+      "width": 1080,
+      "height": 1920,
+      "bitrate": "2M",
+      "format": "mp4"
+    },
+    "instagram": {
+      "width": 1080,
+      "height": 1920,
+      "bitrate": "2M",
+      "format": "mp4"
+    },
+    "youtube": {
+      "width": 1920,
+      "height": 1080,
+      "bitrate": "4M",
+      "format": "mp4"
+    }
+  },
+  "animation_defaults": {
+    "expression": "neutral",
+    "transition_duration": 0.5,
+    "background_music_volume": 0.3
+  }
+}

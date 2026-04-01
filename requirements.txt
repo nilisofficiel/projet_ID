@@ -1,1 +1,19 @@
+# Python dependencies for Animated Reality Show with Avatars
 
+# Core dependencies
+requests>=2.31.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Video processing
+opencv-python>=4.8.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# API integrations
+huggingface-hub>=0.16.0
+python-dotenv>=1.0.0
+
+# Utilities
+pathlib>=1.0.1
+logging>=0.5.1.2
